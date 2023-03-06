@@ -1,6 +1,7 @@
 const express = require("express");
 const { connection } = require("./configs/db");
 const { userRouter } = require("./routes/user.routes");
+const { bugRouter } = require("./routes/bug.routes");
 const cors = require("cors");
 
 const app = express();
@@ -17,7 +18,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/users", userRouter);
-
+app.use("/bug", bugRouter);
 
 app.listen(4500, async () => {
   try {
