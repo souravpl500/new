@@ -4,13 +4,12 @@ const bugSchema = new mongoose.Schema(
   {
     title: {
       type: String,
-      required: true,
+      required: true
     },
 
     severity: {
       type: String,
-      enum: ["Critical", "Major", "Medium", "Low"],
-      required: true,
+      required: true
     },
   },
   {
