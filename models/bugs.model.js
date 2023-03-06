@@ -13,12 +13,12 @@ const bugSchema = new mongoose.Schema(
     },
   },
   {
-    timestamps: true,
+    timestamps: true
   }
 );
 
 const bugModel = mongoose.model("bug", bugSchema);
 
 module.exports = {
-  bugModel,
+  bugModel
 };
